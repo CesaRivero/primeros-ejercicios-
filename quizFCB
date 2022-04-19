@@ -1,0 +1,100 @@
+package tpQuiz;
+
+import javax.swing.*;
+
+class Tpquiz {
+
+	public static void main(String[] args) {
+		String nombre,res;
+		int c=0;
+		JOptionPane.showMessageDialog(null," ¿Crees ser un verdadero cule? \n Empecemos","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+				new ImageIcon(Tpquiz.class.getResource("/img/escudobarca_chica.jpg")));
+		
+		nombre=(String)JOptionPane.showInputDialog(null,"Ingrese nombre","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+				new ImageIcon(Tpquiz.class.getResource("/img/escudobarca_chica.jpg")),null,null);
+		
+		
+		res=(String)JOptionPane.showInputDialog(null,"¿En que año se fundo el FCB?","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+				new ImageIcon(Tpquiz.class.getResource("/img/escudobarca_chica.jpg")),null,null);
+		
+	
+		
+		if (res.equalsIgnoreCase("1899")) { c++;
+			
+		} else {		JOptionPane.showMessageDialog(null,"Uy fallaste :( \nEl FC Barcelona se fundo el 29 de noviembre de 1899 \nSuerte en la proxima","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+				new ImageIcon(Tpquiz.class.getResource("/img/fundacion_FCB.jpg")));
+		
+		}
+		
+		
+		res=(String)JOptionPane.showInputDialog(null,"¿En que año ganamos el sextete?","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+				new ImageIcon(Tpquiz.class.getResource("/img/escudobarca_chica.jpg")),null,null);
+		
+		if(res.equalsIgnoreCase("2009")) {c++;
+		
+		} else {	JOptionPane.showMessageDialog(null,"Uy fallaste :( \nEn la temporada 08/09 el FCB\nse convirtio en el primer equipo Europeo en ganar los seis titulos de la temporada.\nSuerte en la proxima","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+				new ImageIcon(Tpquiz.class.getResource("/img/sextete_FCB.jpg")));
+		}
+		
+		
+		res=(String)JOptionPane.showInputDialog(null,"¿Cuántas ligas de España ha ganado el FC Barcelona?","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+				new ImageIcon(Tpquiz.class.getResource("/img/escudobarca_chica.jpg")),null,null);
+		
+		 if (res.equalsIgnoreCase("24")) {c++;
+			
+		} else {	JOptionPane.showMessageDialog(null,"Uy fallaste :( \nEl FC Barcelona tiene 24 trofeos de la liga de España \nSuerte en la proxima","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+				new ImageIcon(Tpquiz.class.getResource("/img/liga.jpg")));
+
+		}
+		 
+		 res=(String)JOptionPane.showInputDialog(null,"¿Quién es el máximo goleador de la historia del FCB?","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+					new ImageIcon(Tpquiz.class.getResource("/img/escudobarca_chica.jpg")),null,null);
+		 
+		 if (res.equalsIgnoreCase("Lionel Messi")) {c++;
+			
+			} else {	JOptionPane.showMessageDialog(null,"Uy fallaste :( \nEl máximo goleador de la historia del FCB es el argentino Lionel Messi \nSuerte en la proxima","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+					new ImageIcon(Tpquiz.class.getResource("/img/messi_FCB.jpg")));
+
+			}
+
+		 
+		 res=(String)JOptionPane.showInputDialog(null,"¿Quien marcó el gol de la primera Copa de Europa?","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+					new ImageIcon(Tpquiz.class.getResource("/img/escudobarca_chica.jpg")),null,null);
+		 
+		 if (res.equalsIgnoreCase("Ronald Koeman")) {c++;
+			
+			} else {	JOptionPane.showMessageDialog(null,"Uy fallaste :( \nRonald Koeman fue el autor del gol ganador que dio la primera\nCopa de Europa de la historia del FCB  \nSuerte en la proxima","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+					new ImageIcon(Tpquiz.class.getResource("/img/koeman_fcb.jpeg")));
+
+			}
+		
+		 res=(String)JOptionPane.showInputDialog(null,"¿En qué año se retiró Carles Puyol?","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+					new ImageIcon(Tpquiz.class.getResource("/img/escudobarca_chica.jpg")),null,null);
+		 
+		 if (res.equalsIgnoreCase("2014")) {c++;
+			
+			} else {	JOptionPane.showMessageDialog(null,"Uy fallaste :( \nEl mitico capitan del FCB Carles Puyol\nse retiro a finales de la temporada 2013-2014 \nSuerte en la proxima","El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+					new ImageIcon(Tpquiz.class.getResource("/img/Puyol.jpg")));
+
+			}
+		 
+		
+		//mostrar dos mensajes finales si la puntuacion fue mayour a 7 y si fue menor 
+		 
+		 
+		 if (c==6) {JOptionPane.showMessageDialog(null,"Felicidades " +nombre+ "\nTuviste: " +c+ " respuestas correctas "+"\nEres un verdadero Cule \n" ,"El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+					new ImageIcon(Tpquiz.class.getResource("/img/bestias_320.jpeg")));
+			
+		} else { if (c>=3) {JOptionPane.showMessageDialog(null,nombre + "\nTuviste: " +c+ " respuestas correctas "+"\nTe falta poco para ser un verdadero Cule " ,"El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+				new ImageIcon(Tpquiz.class.getResource("/img/escudobarca_chica.jpg")));
+			
+		} else {JOptionPane.showMessageDialog(null,"No has estado muy acertado " +nombre+ "\nTuviste: " +c+ " respuestas correctas\nTenemos una ultima pregunta para vos\n" ,"El gran quiz del Barca",JOptionPane.DEFAULT_OPTION,
+				new ImageIcon(Tpquiz.class.getResource("/img/barca_o_madrid.jfif")));
+
+		}
+
+		}
+		
+		
+}
+}
