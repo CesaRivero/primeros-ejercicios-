@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+</head>
+<body>
+    <h1>Trabajo practico 1</h1>
+    <p>Cesar Rivero. Turno mañana, comision A
+    </p>
+    <a href="https://davinci.edu.ar/" target="_blank" >Visite Da Vinci</a>
+    <a href="html/pag2.html"> Pagina 2</a>
+    <a href="html/pag3.html"> Pagina 3</a>
+    <a href="html/pag4.html"> Pagina 4</a>
+    
+</body>
+</html>
